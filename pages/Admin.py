@@ -39,7 +39,7 @@ add_admin_users('Admin', 'password')
 
 
 def login_admin(username, password):
-    conn = sqlite3.connect('admin_users.db')
+    conn = sqlite3.connect('admin.db')  # Pastikan nama database benar!
     c = conn.cursor()
     c.execute('SELECT password FROM admin_users WHERE username = ?', (username,))
     result = c.fetchone()

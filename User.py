@@ -175,7 +175,7 @@ if st.button('Here`s Your Recommendation'):
         with cols[idx]:
             st.text(selected_recommendations[idx])
             if idx < len(selected_posters):
-                st.image(selected_posters[idx], use_column_width=True)
+                st.image(selected_posters[idx], use_container_width=True)
             else:
                 st.text("No image available")
 
